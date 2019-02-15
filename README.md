@@ -1,2 +1,6 @@
 # restful-blog
-This is a simple blog site that uses RESTful routing
+This project implements the principles of CRUD & RESTful routing.
+The blog page allows users to:
+-create a blog post
+-edit the blog post
+-delete the blog post
