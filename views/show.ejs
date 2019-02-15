@@ -1,0 +1,29 @@
+<% include ./partials/header%>
+
+<div class="ui main text container">
+     <div class="ui huge header"><i class="wifi icon"></i></div>
+<div class="ui top attached inverted segment">
+    <div class="ui huge header"><%=blog.title%></div>
+    <div class="ui top attached">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%=blog.image%>">
+            <div class="content">
+            <span><%=blog.created.toDateString()%></span>
+            </div>
+        <div class="description">
+            <p><%-blog.body%></p>
+            <p><i class="facebook icon"></i> <i class="twitter icon"></i> <i class="instagram icon"></i>
+            <i class="youtube icon"></i>
+            </p>
+            <p></p>
+            </div>
+        <a class="ui inverted blue button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+        <form id="delete" action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+            <button class="ui inverted red button">Delete</button>
+        </form>
+
+        </div>
+    </div>
+</div>
+</div>
+<% include ./partials/footer%>

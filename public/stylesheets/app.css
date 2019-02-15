@@ -1,0 +1,35 @@
+i.icon{
+    font-size: 2em;
+}
+.container.main{
+    margin-top: 7em;
+}
+.ui.form .field > label {
+    color:white;
+}
+
+#delete{
+    display: inline;
+}
+.ui.items > .item > .content > a.header{
+    color: white;
+}
+.ui.items > .item > .content > .description{
+    color: white;
+}
+.ui.items > .item .meta{
+    color: pink;
+}
+.ui.divided.items > .item{
+    border-top-color: white;
+}
+
+body{
+    background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.ui.items > .item > .content > a.header:hover{
+    color: pink;
+}
